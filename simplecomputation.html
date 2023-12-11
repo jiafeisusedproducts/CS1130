@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="programstyles.css">
+    <title>Simple Computation</title>
+</head>
+<body>
+    <a href="homepage.html" class="atr"><h1 class="home-button"> home </h1></a>
+    <div class="headertext">
+        <h1>simple computation.</h1>
+    </div>
+
+    <div class="menu">
+        <div class="container">
+            <div class="temperature-converter">
+                <form id="temp">
+                    <label for="temperature">Temperature:</label>
+                    <input type="number" id="temperature" name="temperature" placeholder="Enter value" required>
+
+                    <label for="tempUnit">Unit:</label>
+                    <select id="tempUnit" name="tempUnit">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+
+                    <button type="button" onclick="convertTemperature()">Convert</button>
+
+                    <p id="tempResult"></p>
+                </form>
+            </div>
+            
+            <div class="length-converter">
+                <form id="length">
+                    <label for="lengthValue">Length:</label>
+                    <input type="number" id="lengthValue" name="lengthValue" placeholder="Enter value" required>
+
+                    <label for="lengthUnit">Unit:</label>
+                    <select id="lengthUnit" name="lengthUnit">
+                        <option value="meters">Meters</option>
+                        <option value="feet">Feet</option>
+                    </select>
+
+                    <button type="button" onclick="convertLength()">Convert</button>
+                    <p id="lengthResult"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions for temperature and length conversion
+        function convertTemperature() {
+            // Get input values
+            var temperature = parseFloat(document.getElementById('temperature').value);
+            var unit = document.getElementById('tempUnit').value;
+
+            // Perform conversion
+            var result = (unit === 'celsius') ? (temperature * 9/5) + 32 : (temperature - 32) * 5/9;
+
+            // Display result
+            document.getElementById('tempResult').innerText = result.toFixed(2) + '°' + ((unit === 'celsius') ? 'F' : 'C');
+        }
+
+        function convertLength() {
+            // Get input values
+            var lengthValue = parseFloat(document.getElementById('lengthValue').value);
+            var unit = document.getElementById('lengthUnit').value;
+
+            // Perform conversion
+            var result = (unit === 'meters') ? lengthValue * 3.28084 : lengthValue / 3.28084;
+
+            // Display result
+            document.getElementById('lengthResult').innerText = result.toFixed(2) + ' ' + ((unit === 'meters') ? 'Feet' : 'Meters');
+        }
+    </script>
+    
+</body>
+</html>

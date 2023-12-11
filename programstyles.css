@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/background.PNG);
+    background-size: cover;
+}
+
+.headertext {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.headertext h1 {
+    font-family: 'Helvetica', sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.payrollContainer {
+    position: relative;
+    margin: 10% 20%;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+th{
+    text-align: left;
+    background-color:  rgb(151, 183, 241);
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    padding: 8px;
+    width: 150px;
+}
+
+.sampletaxtable{
+    padding:10px;
+}
+
+.incometaxguide{
+    text-align: center;
+    color:whitesmoke;
+    margin-top: 30px;
+}
+
+.yourIncomeTax{
+    margin-top:20px;
+}
+
+.atr{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+}
+
+.home-button {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    padding-left: 30px;
+}
+
+#result{
+    margin-top:20px;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#clearRow
+{
+    margin-top: 15px;
+}
+
+#tempResult{
+    margin-top:20px;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#lengthResult{
+    margin-top:20px;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+td{
+    padding:10px;
+    border: 1px solid rgb(151, 183, 241);
+    background-color: white;
+    color:rgb(21, 21, 22);
+    width: 150px;
+}
+
+
+.employee-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#incometax{
+    margin-top: 15px;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form {
+    background-color: transparent;
+    backdrop-filter: 15px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#clearRows {
+    margin-top: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(151, 183, 241);
+    color: white;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  form input[type="number"] {
+    text-align: right;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .modal button {
+    margin-top: 10px;
+  }
