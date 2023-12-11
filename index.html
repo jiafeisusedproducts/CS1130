@@ -1,239 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-</head>
-<body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/ac6303d7f3753736074401308c7bbded.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/ac6303d7f3753736074401308c7bbded.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="https://lastfm.freetls.fastly.net/i/u/ar0/ac6303d7f3753736074401308c7bbded.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="https://lastfm.freetls.fastly.net/i/u/ar0/ac6303d7f3753736074401308c7bbded.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="https://lastfm.freetls.fastly.net/i/u/ar0/ac6303d7f3753736074401308c7bbded.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+<html lang = "en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="styles.css">
+        
+        <title>
+            Ralph Paolo Dulce - Home
+        </title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <script src="https://kit.fontawesome.com/d5437172af.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="header">
+            <div class="bg-image"></div>
+            <div class="container">
+                <nav>
+                    <img src="images/Ralph%20Paolo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">home</a> </li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <div>
+                <h1 class="header-text">hi, i'm ralph paolo,<br>a cs student.</h1>
             </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
+        </div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+            <div id = "about">
+                <div class="container">
+                    <div class="row">
+                        <div class="aboutcol1">
+                            <img src="images/IMG_3280.jpeg">
+                        </div>
+                        <div class="aboutcol2">
+                            <h1 class="subtitle">about me.</h1>
+                            <br>
+                            <p>
+                                Hi, I'm Ralph Paolo Dulce. I was born on 01 August 2001, in a quaint little town in southern Philippines
+                                called Kidapawan City. I come from a multicultural background, having Filipino blood in me but a mind
+                                melded by South Africa and the Philippines too.
+                                <br>
+                                <br>
+                                I am an avid enthusiast of computers, nature, and art. I am
+                                currently addicted to Mandarin Tea Garden's beef wonton noodle soup, indie, pop, and country music, being a hopeless romantic, but
+                                most importantly, I am a Computer Science student at Ateneo de Davao University as of 2023. I like to hang
+                                out with my friends, write in my free time, and do random stuff on my iPad until I unlock a life-changing idea.
+                            </p>
+                            <br>
+                            <div class="tabtitles">
+                                <h4 class="tablinks activelink" onclick="opentab('skills')">skills</h4>
+                                <h4 class="tablinks" onclick="opentab('experience')">experience</h4>
+                                <h4 class="tablinks" onclick="opentab('education')">education</h4>
+                            </div>
+                            <div class="tabcontents activetab" id = "skills">
+                                <ul>
+                                    <li><span>COOKING</span><br>African, Indian, Western, Asian, Hispanic</li>
+                                    <li><span>CODING</span><br>Basic C, Python, C++, HTML, CSS, JavaScript, SQL</li>
+                                    <li><span>WRITING</span><br>Poetry, Essay, Technical, Scriptwriting</li>
+                                    <li><span>LANGUAGES</span><br>English, Tagalog, Bisaya, Afrikaans, French</li>
+                                    <li><span>GRAPHIC DESIGN</span><br>Sketching, Concepts, Character Design, Layout</li>
+                                </ul>
+                            </div>
+                            <div class="tabcontents" id="experience">
+                                <ul>
+                                    <li><span>2023-present</span><br>Team Member at AdDU CS Pixelshot, Processors, Productions, Communications</li>
+                                    <li><span>2020-2022</span><br>Writer at Self-Employed</li>
+                                    <li><span>2018-2019</span><br>Lead Artist at Zinniaville Secondary School</li>
+                                    <li><span>2014-2015</span><br>Bell Ringer at Holy Family Combined School</li>
+                                </ul>
+                            </div>
+                            <div class="tabcontents" id="education">
+                                <ul>
+                                    <li><span>2023-current</span><br>BS in Computer Science at Ateneo de Davao University</li>
+                                    <li><span>2021-2022</span><br>BS in Biology at Emilio Aguinaldo College - Manila</li>
+                                    <li><span>2015-2019</span><br>Grade 8 - 12 at Zinniaville Secondary School</li>
+                                    <li><span>2012-2014</span><br>Grade 5 - 7 at Holy Family Combined School</li>
+                                    <li><span>2008-2011</span><br>Grade R - 3 at Anne Claire Montessori School</li>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+        <!---------projects------------------->
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
+        <div id="projects">
+            <div class="container">              
+                <h1 class="subtitle">projects.</h1>
+                <div class="serviceslist">
+                    <div>
+                        <i class="fa-solid fa-calculator"></i>
+                        <h2 class="serviceoffered">four-in-one converter</h2>
+                        <p class= "description">Struggling with the imperial or the metric system? Well,
+                            here's a program that can help you out with all your woes!
+                        </p>
+                        <br>
+                        <a href="simplecomputation.html">open</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-exclamation"></i>
+                        <h2 class="serviceoffered">nth factorial calculator</h2>
+                        <p class= "description">Too tired of calculating with your mind or writing it down on paper?
+                            This program can help with those complex calculations!
+                        </p>
+                        <br>
+                        <a href="nthfactorialsumandaverage.html">open</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-users"></i>
+                        <h2 class="serviceoffered">employee payroll system</h2>
+                        <p class= "description">Costly to hire someone to keep track of your business' payroll?
+                            We got you covered with this payroll system!
+                        <br>
+                        <br>
+                        </p>
+                        <a href="payroll.html">open</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-money-bill"></i>
+                        <h2 class="serviceoffered">income tax calculator</h2>
+                        <p class= "description">Here's a program to prevent you from committing tax evasion!</p>
+                        <br>
+                        <a href="taxcalculator.html">open</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+        <!-------contact------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactleft">
+                        <h1 class="subtitle">contact me.</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> rppdulce@addu.edu.ph</p>
+                        <div class="socialicons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contactright">
+                        <form>
+                            <input type = "text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>        
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+        <script>
+            var tablinks = document.getElementsByClassName("tablinks");
+            var tabcontents = document.getElementsByClassName("tabcontents");
 
-</body>
+            function opentab(tabname){
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("activelink");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("activetab");
+                }
+                event.currentTarget.classList.add("activelink");
+                document.getElementById(tabname).classList.add("activetab");
+            }
+        </script>
+        
+    </body>
 </html>
